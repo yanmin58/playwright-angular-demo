@@ -3,8 +3,8 @@ import { test, expect } from '@playwright/test';
 test('has title', async ({ page }) => {
     await page.goto('https://yanmin58.github.io/playwright-angular-demo/dashboard');
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Tour of Heroes/);
+  // Expect a title of a certain string.
+  await expect(page).toHaveTitle("Tour of Heroes DEMO");
 });
 
 test('search Bombasto', async ({ page }) => {
